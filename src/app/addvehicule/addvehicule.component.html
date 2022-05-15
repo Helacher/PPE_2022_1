@@ -1,0 +1,96 @@
+<body>
+
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+    data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+  
+       
+    
+    
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Ajouter Véhicule</h4>
+                    </div>
+                
+                </div>
+                
+            </div>
+        
+          
+          
+            <div class="container-fluid">
+                <router-outlet></router-outlet>
+          
+                <div class="row">
+                    
+            
+             
+                    <div class="col-lg-8 col-xlg-9 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <form [formGroup]="this.vehiculeService.addvehiculeForm" (ngSubmit)="add(vehicule)" class="form-horizontal form-material">
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">Type Immatriculation</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="Entrer le type d'immatriculation" class="form-control p-0 border-0" [(ngModel)]="vehicule.typeImmatriculation" [ngModelOptions]="{standalone:true}"> </div>
+                                            <input type="text" class="form-control" placeholder="Entrer le type d'immatriculation" formControlName="type" id="firstname"> </div>
+                                        </div>
+                                    <div class="form-group mb-4">
+                                        <label for="example-email" class="col-md-12 p-0">Immatriculation</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="Entrer le immatriculation" [(ngModel)]="vehicule.immatriculation" [ngModelOptions]="{standalone:true}"
+                                                class="form-control p-0 border-0">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label for="example-email" class="col-md-12 p-0">Carte Grise</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="Entrer la carte grise" [(ngModel)]="vehicule.numCarteGrise" [ngModelOptions]="{standalone:true}"
+                                                class="form-control p-0 border-0">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label for="example-email" class="col-md-12 p-0">Marque</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="Entrer le marque"  [(ngModel)]="vehicule.marque" [ngModelOptions]="{standalone:true}"
+                                                class="form-control p-0 border-0">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label for="example-email" class="col-md-12 p-0">Modele</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="Entrer le modele" [(ngModel)]="vehicule.modele" [ngModelOptions]="{standalone:true}"
+                                                class="form-control p-0 border-0">
+                                        </div>
+                                    </div>
+                                    
+                                
+                                
+                                    
+                                    <div class="form-group mb-4">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-primary" style="background-color: #478AC9;">Enregistrer</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+
+                                
+                                    
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+       
+            </div>
+      
+        
+        </div>
+      
+
+
+</body>
+
