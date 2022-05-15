@@ -1,0 +1,92 @@
+
+
+<body>
+
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+    data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+  
+ 
+       
+     
+          
+        
+          
+          
+            <div class="container-fluid">
+                <router-outlet></router-outlet>
+          
+                <div class="row">
+           
+            
+             
+                    <div class="col-lg-8 col-xlg-9 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form [formGroup]="this.clientService.addclientForm" (ngSubmit)="add()" class="form-horizontal form-material">
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">First Name</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" class="form-control" placeholder="First Name *" formControlName="firstname" id="firstname"> </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0"> Last Name</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" class="form-control" placeholder="Last Name *" formControlName="lastname" id="lastname"> </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">CIN</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" class="form-control" placeholder="CIN *" formControlName="cin" id="cin"> </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">TEL</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" class="form-control" placeholder="TEL *" formControlName="numtel" id="numtel"> </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">PERMIS</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" class="form-control" placeholder="PERMIS *" formControlName="permis" id="permis"> </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">USERNAME</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" class="form-control" placeholder="USERNAME *" formControlName="username" id="username"> </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">PASSWORD</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" class="form-control" placeholder="PASSWORD *" formControlName="password" id="password"> </div>
+                                    </div>
+                            
+                                    <div class="form-group mb-4">
+                                        <label>File Upload  </label>
+                                            <input type="file" accept="image/*" (change)="onSelectFile($event)">
+                                            <img [src]="imgURL" height="10" width="10" *ngIf="imgURL">
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary">ENREGIRTRER</button>
+                                      
+                                      </div>
+                    
+
+                                    
+                                   
+                                   
+                                
+                                   
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+       
+            </div>
+      
+        
+        </div>
+      
+
+</body>

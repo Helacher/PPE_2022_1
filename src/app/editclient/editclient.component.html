@@ -1,0 +1,59 @@
+
+            
+             
+                  
+<div class="modal-header bg-primary text-white">
+    <h4 class="modal-title" id="modal-basic-title">Modifier Véhicules</h4>
+</div>
+<div class="modal-body">
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()" >
+        <div class="form-group row d-flex justify-content-center align-items-center">
+            <label for="lastName" class="col-form-label col-sm-2 text-right">Nom :</label>
+            <div class="col-sm-5">
+                <input type="text" formControlName="lastname" class="form-control" />
+               
+            </div>
+        </div>
+        <div class="form-group row d-flex justify-content-center align-items-center">
+            <label for="firstName" class="col-form-label col-sm-2 text-right">Prénom:</label>
+            <div class="col-sm-5">
+                <input type="text" formControlName="firstname" class="form-control" />
+             
+            </div>
+        </div>
+        <div class="form-group row d-flex justify-content-center align-items-center">
+            <label for="numtel" class="col-form-label col-sm-2 text-right">Téléphone:</label>
+            <div class="col-sm-5">
+                <input type="text" formControlName="numtel" class="form-control" />
+               
+            </div>
+        </div>
+        <div class="form-group row d-flex justify-content-center align-items-center">
+            <label for="permis" class="col-form-label col-sm-2 text-right">Permis :</label>
+            <div class="col-sm-5">
+                <input type="text" formControlName="permis" class="form-control" />
+               
+            </div>
+        </div>
+        <div class="form-group row d-flex justify-content-center align-items-center">
+            <label for="cin" class="col-form-label col-sm-2 text-right">Cin :</label>
+            <div class="col-sm-5">
+                <input type="text" formControlName="cin" class="form-control" />
+               
+            </div>
+        </div>
+     
+      
+     
+        <div class="modal-footer">
+            <button [disabled]="isLoading" class="btn btn-primary mr-2">Modifier</button>
+            <button [disabled]="isLoading" class="btn btn-danger btn-mr-2" (click)="modal.close('Cancel')">Annuler</button>
+            
+        </div>
+ 
+    </form>
+</div>
+<!-- <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark"  (click)="modal.close('Yes')">Update</button>
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Cancel')">Cancel</button>
+</div> -->

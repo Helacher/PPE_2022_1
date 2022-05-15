@@ -1,0 +1,68 @@
+<body>
+
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+    data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+  
+ 
+       
+            
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Détails Véhicules</h4>
+                    </div>
+                
+                </div>
+                
+            </div>
+         
+            <div class="container-fluid">
+                <router-outlet></router-outlet>
+          
+                <div class="row">
+           
+             
+                    <div class="col-lg-8 col-xlg-9 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                              
+
+                  <div class="row" style="font-size: medium;" >
+                        <label class="col-md-12 p-0" >Type Immatriculation :
+                              {{vehicule.typeImmatriculation}} </label>
+                        <br>
+                        <br>
+                        <label class="col-md-12 p-0">Immatriculation :   {{vehicule.immatriculation}} </label>
+                        <br>
+                        <br>
+                        <label class="col-md-12 p-0">Carte Grise :   {{vehicule.numCarteGrise}} </label>
+                        <br>
+                        <br>
+                        <label class="col-md-12 p-0">Marque :   {{vehicule.marque}} </label>
+                        <br>
+                        <br>
+                        <label class="col-md-12 p-0">Modele :   {{vehicule.modele}} </label>
+                        
+                        
+                       
+                        
+                        
+                   
+
+                  </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+       
+           
+      
+        
+        </div>
+      
+    </div>
+
+</body>
+
+

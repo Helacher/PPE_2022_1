@@ -1,0 +1,74 @@
+<body>
+
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+      
+  
+
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Gérer Véhicule</h4>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-16">
+                        <div class="white-box">
+                            
+                            <button class="btn btn-success float-end" (click)="addvehicule()" style="color: #ffffff; ">Ajouter Véhicule</button>
+                            <br>
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr style="text-align:center">
+                                            <th class="border-top-0">#</th>
+                                            <th class="border-top-0">Type Immatriculation</th>
+                                            <th class="border-top-0">Immatriculation</th>
+                                            <th class="border-top-0">Carte Grise</th>
+                                            <th class="border-top-0">Marque</th>
+                                            <th class="border-top-0">Modele</th>
+                                            <th class="border-top-0"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="text-align:center">
+                                        <tr *ngFor="let v of vehicule" >
+                                         <td>{{v.id}}</td>
+                                         <td>{{v.typeImmatriculation}}</td>
+                                          <td>{{v.immatriculation}}</td>
+                                          <td>{{v.numCarteGrise}}</td>
+                                          <td>{{v.marque}}</td>
+                                          <td>{{v.modele}}</td>
+    
+                                          <td>
+                                            <button type="button" class="btn btn-primary btn-sm" (click)="displayVehicule(v.id)"><i class="bi bi-display"></i> Afficher</button>
+                                            <button type="button" class="btn btn-warning btn-sm" style="margin:4px ;color: #ffffff;"  (click)="Editvehicule(v)"><i class="bi bi-pencil"></i>Modifier</button>
+                                            <button type="button" class="btn btn-danger  btn-sm" (click)="deleteVehicule(v.id)" style="color: #ffffff; "><i class="bi bi-trash"></i>Supprimer</button>   
+                                          </td>
+                                       
+                                          </tr>
+                                          
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+            </div>
+      
+            
+          
+           
+        </div>
+  
+ 
+        
+
+    
+</body>
+                                           

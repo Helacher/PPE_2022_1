@@ -1,0 +1,83 @@
+
+
+
+<body>
+
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+      
+        
+        
+        <div class="page-breadcrumb bg-white">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Gérer Client</h4>
+                </div>
+               
+            </div>
+    
+        </div>
+        
+    
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="white-box">
+                            
+                            <button class="btn btn-success float-end" (click)="addclient()" style="color: #ffffff; ">Ajouter Client</button>
+                            <br>
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table text-nowrap" style="text-align: center;">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">#</th>
+                                            <th class="border-top-0">Nom</th>
+                                            <th class="border-top-0">Prénom</th>
+                                            <th class="border-top-0">Nom d'utilisateur</th>
+                                            <th class="border-top-0">Mot de passe</th>
+                                            <th class="border-top-0">Téléphone</th>
+                                            <th class="border-top-0">Permis</th>
+                                            <th class="border-top-0">Cin</th>        
+                                            <th class="border-top-0">Photo</th>
+                                            <th class="border-top-0"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let e of client" >
+                                         <td>{{e.id}}</td>
+                                          <td>{{e.firstname}}</td>
+                                          <td>{{e.lastname}}</td>
+                                          <td>{{e.cin}}</td>
+                                          <td>{{e.permis}}</td>
+                                          <td>{{e.username}}</td>
+                                          <td>{{e.password}}</td>
+                                          <td>{{e.numtel}}</td>
+                                          <td><a href="#"><img class="card-img-top img-responsive"
+                                            src = "{{this.clientService.host+'/Imgclients/'+e.id}}" 
+                                            style = "height :200px;width:fil-content;"
+                                           alt=""></a></td>
+                                          <td>
+                                              <button type="button" class="btn btn-primary btn-sm" (click)="displayClient(e.id)"><i class="bi bi-display"></i>Afficher</button>
+                                              <button type="button" class="btn btn-warning btn-sm" style="  margin: 10px; color:#ffffff;" (click)="editClient(e)"><i class="bi bi-pencil"></i>Modifier</button>
+                                              <button type="button" class="btn btn-danger  btn-sm" (click)="deleteClient(e.id)"><i class="bi bi-trash"></i>Supprimer</button>   
+                                            </td>
+                                          </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+            </div>
+      
+            
+          
+           
+        </div>
+  
+
+
+    
+</body>

@@ -1,0 +1,63 @@
+
+            
+             
+                  
+<div class="modal-header bg-primary text-white">
+    <h4 class="modal-title" id="modal-basic-title">Modifier Véhicule</h4>
+</div>
+<div class="modal-body">
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()" >
+        <div class="form-group row d-flex justify-content-center align-items-center">
+                <label for="TypeImmatriculation" class="col-form-label col-sm-2 text-right" >Type Immatriculation :   </label>
+               
+                    <div class="col-sm-6" >
+                        <input type="text" formControlName="typeImmatriculation" class="form-control" />
+             
+                </div>
+            </div>
+              
+            
+                <div class="form-group row d-flex justify-content-center align-items-center">
+                    <label for="Immatriculation" class="col-form-label col-sm-2 text-right">Immatriculation : </label>
+                  
+                        <div class="col-sm-6">
+                            <input type="text" formControlName="immatriculation" class="form-control" />
+                    </div>
+                
+                    </div>
+
+                    <div class="form-group row d-flex justify-content-center align-items-center">
+                        <label for="CarteCrise" class="col-form-label col-sm-2 text-right">Carte Crise :</label>
+                       
+                            <div class="col-sm-5">
+                                <input type="text" formControlName="numCarteGrise" class="form-control" />
+                        </div>
+                        
+                        </div>
+                        <div class="form-group row d-flex justify-content-center align-items-center">
+                            <label for="Marque" class="col-form-label col-sm-2 text-right">Marque :</label>
+                        
+                                <div class="col-sm-5">
+                                    <input type="text" formControlName="marque" class="form-control" />
+                            </div>
+                            
+                            </div>
+
+                            <div class="form-group row d-flex justify-content-center align-items-center">
+                                <label for="Modele" class="col-form-label col-sm-2 text-right">Modele :</label>
+                               
+                                    <div class="col-sm-5">
+                                        <input type="text" formControlName="modele" class="form-control" />
+                                </div>
+                                </div>
+
+
+   
+        <div class="modal-footer">
+            <button [disabled]="isLoading" class="btn btn-primary mr-2">Modifier</button>
+            <button [disabled]="isLoading" class="btn btn-danger btn-mr-2" (click)="modal.close('Cancel')">Annuler</button>
+            
+        </div>
+ 
+    </form>
+</div>
