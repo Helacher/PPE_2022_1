@@ -17,6 +17,8 @@ import { EditclientComponent } from './editclient/editclient.component';
 import { AddvehiculeComponent } from './addvehicule/addvehicule.component';
 import { DisplayVehiculeComponent } from './display-vehicule/display-vehicule.component';
 import { EditvehiculeComponent } from './editvehicule/editvehicule.component';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -34,7 +36,8 @@ import { EditvehiculeComponent } from './editvehicule/editvehicule.component';
     EditclientComponent,
     AddvehiculeComponent,
     DisplayVehiculeComponent,
-    EditvehiculeComponent
+    EditvehiculeComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { EditvehiculeComponent } from './editvehicule/editvehicule.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    RouterModule
     
   ],
   providers: [],

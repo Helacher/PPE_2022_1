@@ -12,6 +12,7 @@ import { DisplayClientComponent } from './display-client/display-client.componen
 import { AddvehiculeComponent } from './addvehicule/addvehicule.component';
 import { DisplayVehiculeComponent } from './display-vehicule/display-vehicule.component';
 
+
 const routes : Routes = [
   {path: '', component: MainComponent,children :[  
   {path: 'dashboard', component: DashboardComponent  },
@@ -27,6 +28,7 @@ const routes : Routes = [
   {path: 'displayVehicule/:id',component: DisplayVehiculeComponent}
 
 ]},
+
  
 ];
 
