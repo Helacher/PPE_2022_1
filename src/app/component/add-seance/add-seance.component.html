@@ -1,0 +1,49 @@
+
+<body>
+
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+      
+  
+
+           
+    
+    <div class="page-breadcrumb bg-white">
+        <div class="row align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <h4 class="page-title">Ajouter Seance</h4>
+            </div>
+        
+        </div>
+        
+    </div>
+    <div class="col-lg-8 col-xlg-9 col-md-12">
+    <div class="card">
+        <div class="card-body">
+            <form >
+               
+                <div class="form-group">
+                  
+                    
+                  <label for="name">Temp départ </label>
+                  <input type="time" class="form-control" id="appt-time" name="appt-time"  placeholder="timeStart*" [(ngModel)]="seance.timeStart" [ngModelOptions]="{standalone:true}">
+                </div>
+                <div class="form-group">
+                  <label for="name">temp fin</label>
+                  <input type="time" class="form-control" id="appt-time"  name="appt-time"  placeholder="timeEnd *" [(ngModel)]="seance.timeEnd" [ngModelOptions]="{standalone:true}">
+                </div>
+                 
+                <div class="text-center">
+                    <button type="submit" (click)="add(seance)"class="btn btn-primary btn-sm" >ENREGIRTRER</button>
+                  
+                  </div>      
+                
+            </form>
+        </div>
+  
+ 
+    </div>
+</div>
+</div>
+    
+    </body>

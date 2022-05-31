@@ -11,6 +11,14 @@ import { HistoriqueComponent } from './historique/historique.component';
 import { DisplayClientComponent } from './display-client/display-client.component';
 import { AddvehiculeComponent } from './addvehicule/addvehicule.component';
 import { DisplayVehiculeComponent } from './display-vehicule/display-vehicule.component';
+import { VilleComponent } from './component/ville/ville.component';
+import { AddVilleComponent } from './component/add-ville/add-ville.component';
+import { AddLocaleComponent } from './component/add-locale/add-locale.component';
+import { LocaleComponent } from './component/locale/locale.component';
+import { AddSeanceComponent } from './component/add-seance/add-seance.component';
+import { SeanceComponent } from './component/seance/seance.component';
+import { AddReservationComponent } from './component/add-reservation/add-reservation.component';
+import { ReservationComponent } from './component/reservation/reservation.component';
 
 
 const routes : Routes = [
@@ -25,7 +33,16 @@ const routes : Routes = [
   {path: 'displayClient/:id',component: DisplayClientComponent},
   {path: 'addvehicule',component: AddvehiculeComponent },
   {path: 'editVehicule/:id',component: AddvehiculeComponent},
-  {path: 'displayVehicule/:id',component: DisplayVehiculeComponent}
+  {path: 'displayVehicule/:id',component: DisplayVehiculeComponent},
+  {path: 'Villes',component:VilleComponent},
+  {path: 'addVille',component:  AddVilleComponent },
+  {path: 'addLocale',component:  AddLocaleComponent },
+  {path: 'Locales',component: LocaleComponent },
+  {path: 'addSeance',component:  AddSeanceComponent },
+  {path: 'Seances',component: SeanceComponent },
+  {path: 'addReservation',component:  AddReservationComponent },
+  
+  {path: 'Reservations',component:  ReservationComponent },
 
 ]},
 

@@ -1,0 +1,73 @@
+<body>
+
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+      
+  
+
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Work hours</h4>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="white-box">
+                    <h3 class="box-title ">Ville
+                    <button class="btn btn-success float-end" (click)="addSeance()" style="color: #ffffff; ">Ajouter Seance</button>
+                    
+                   
+                </h3>
+                    <br>
+                    <br>
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="white-box">
+                            
+                            <h3 class="box-title ">seance
+                              </h3>
+                                <br>
+                                <br>
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">#</th>
+                                            <th class="border-top-0">timeStart</th>
+                                            <th class="border-top-0">timeEnd</th>
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody >
+                                        <tr *ngFor="let e of seance" >
+                                         <td>{{e.id}}</td>
+                                          <td>{{e.timeStart}}</td>
+                                          <td>{{e.timeEnd}}</td>  
+                                                  
+                                          </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                
+         
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+ 
+        
+
+    
+            </body>

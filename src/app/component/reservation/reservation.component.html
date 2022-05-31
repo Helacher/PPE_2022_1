@@ -1,0 +1,63 @@
+
+<body>
+
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+      
+  
+
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Gérer Reservation</h4>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="white-box">
+                    <h3 class="box-title ">Reservation
+                    <button class="btn btn-success float-end" (click)="addReservation()" style="color: #ffffff; ">Réserver</button>
+                    
+                   
+                </h3>
+                    <br>
+                    <br><div class="container-fluid">
+    
+                    
+                <div class="table-responsive">
+                    <table class="table text-nowrap">
+                        <thead>
+                            <tr>
+                                <th class="border-top-0">#</th>
+                                <th class="border-top-0">jour</th>
+                                <th class="border-top-0">Heur</th>
+                                <th class="border-top-0">Locale</th>
+                                <th class="border-top-0">client</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr *ngFor="let e of reservation" >
+                             <td>{{e.id}}</td>
+                              <td>{{e.dateReservation}}</td>
+                              <td>{{e.seance.timeStart}}-{{e.seance.timeEnd}}</td>  
+                              <td>{{e.locale.nom}}</td>
+                              <td>{{e.client.firstname}} {{e.client.lastname}}</td>  
+                                        
+                              </tr>
+                          </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+
+</div>
+</div>
+</div>
+</body>

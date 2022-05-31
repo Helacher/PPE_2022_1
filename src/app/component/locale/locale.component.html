@@ -1,0 +1,64 @@
+<body>
+
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+      
+  
+
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Gérer Locale</h4>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="white-box">
+                    <h3 class="box-title ">Ville
+                    <button class="btn btn-success float-end" (click)="addville()" style="color: #ffffff; ">Ajouter Ville</button>
+                    <button class="btn btn-success float-end" (click)="addLocale()" style="color: #ffffff; ">Ajouter Locale</button>
+                   
+                </h3>
+                    <br>
+                    <br>
+                <div class="table-responsive">
+                    <table class="table text-nowrap">
+                        <thead>
+                            <tr>
+                                <th class="border-top-0">#</th>
+                                <th class="border-top-0">Nom</th>
+                                <th class="border-top-0">Ville</th>
+                                <th class="border-top-0">adresse</th>
+                                <th class="border-top-0">telephone</th>
+                                <th class="border-top-0">nbguichet</th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr *ngFor="let e of locale" >
+                             <td>{{e.id}}</td>
+                              <td>{{e.nom}}</td>
+                              <td>{{e.ville.nom}}</td>  
+                              <td>{{e.adresse}}</td>
+                              <td>{{e.telephone}}</td>  
+                              <td>{{e.nbguichet}}</td>             
+                              </tr>
+                          </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+
+</div>
+</div>
+  
+ 
+        
+
+    
+</body>

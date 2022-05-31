@@ -18,6 +18,14 @@ import { AddvehiculeComponent } from './addvehicule/addvehicule.component';
 import { DisplayVehiculeComponent } from './display-vehicule/display-vehicule.component';
 import { EditvehiculeComponent } from './editvehicule/editvehicule.component';
 import { RouterModule } from '@angular/router';
+import { VilleComponent } from './component/ville/ville.component';
+import { AddVilleComponent } from './component/add-ville/add-ville.component';
+import { LocaleComponent } from './component/locale/locale.component';
+import { AddLocaleComponent } from './component/add-locale/add-locale.component';
+import { AddSeanceComponent } from './component/add-seance/add-seance.component';
+import { ReservationComponent } from './component/reservation/reservation.component';
+import { AddReservationComponent } from './component/add-reservation/add-reservation.component';
+import { SeanceComponent } from './component/seance/seance.component';
 
 
 
@@ -37,6 +45,14 @@ import { RouterModule } from '@angular/router';
     AddvehiculeComponent,
     DisplayVehiculeComponent,
     EditvehiculeComponent,
+    VilleComponent,
+    AddVilleComponent,
+    LocaleComponent,
+    AddLocaleComponent,
+    AddSeanceComponent,
+    ReservationComponent,
+    AddReservationComponent,
+    SeanceComponent,
    
   ],
   imports: [
